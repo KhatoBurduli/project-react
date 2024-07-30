@@ -75,7 +75,7 @@ const AddCoffeePage = () => {
            {coffeeList.map((item) => 
                 <div key={item.id} className="option">
                         <h3>{item.coffee}</h3>
-                        <h3>{item.price} GEL</h3>
+                        <h4>{item.price} GEL</h4>
                         <div className="icons">
                             <FontAwesomeIcon icon={faPenToSquare}  className="icon" onClick={() => navigate(`/update-coffee/${item.id}`)}/>
                             <FontAwesomeIcon icon={faTrash} className="icon" onClick={() => handleDelete(item.id)}/>
